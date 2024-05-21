@@ -7,10 +7,10 @@ export default function HeroSection() {
   return (
     <section className='min-h-screen w-full relative'>
       <div className='w-full flex flex-col justify-center gap-7 items-center absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2'>
-        <span className='text-7xl text-white mx-auto text-center font-bold'>
+        <span className='text-5xl lg:text-7xl text-white mx-auto text-center font-bold'>
           Gloddy Recruiter
         </span>
-        <div className='flex flex-col justify-center bg-[#D7DBE7] items-center w-[90%] lg:w-full max-w-[800px] rounded-[200px] h-[160px] m-4'>
+        <div className='flex flex-col justify-center bg-[#D7DBE7] items-center w-[90%] lg:w-full max-w-[800px] rounded-[200px] h-[100px] lg:h-[160px] m-4'>
           <div
             className='w-full h-full rounded-[200px]'
             style={{
@@ -22,7 +22,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className='text-2xl whitespace-pre-wrap text-white/[88%] text-center'>
+        <div className='text-xl lg:text-2xl whitespace-pre-wrap text-white/[88%] text-center'>
           <span className='font-bold'>
             {"국내에서 외국인 인재를 찾고 싶을 때!\n"}
           </span>
