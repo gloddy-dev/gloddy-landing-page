@@ -30,7 +30,7 @@ const processContent = [
   },
 ];
 
-export default function Process() {
+export default function ProcessSection() {
   const container = useRef<HTMLDivElement | null>(null);
 
   const [focusProcess, setFocusProcess] = useState<number>(0);

@@ -43,7 +43,7 @@ export default function ProcessContent({
   }, [focus]);
 
   return (
-    <div className={'flex gap-5 w-full'} onClick={onClick}>
+    <div className={'flex gap-5 w-full cursor-pointer'} onClick={onClick}>
       <div
         className={twMerge(
           'flex justify-center items-center text-white w-8 h-8 text-xl rounded-full',

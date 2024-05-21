@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function Advantage() {
+export default function AdvantageSection() {
   return (
     <section className="flex flex-col justify-center items-center w-full h-screen max-h-[1080px]">
       <div className="flex flex-col gap-12 max-w-7xl w-full h-full items-center justify-center">

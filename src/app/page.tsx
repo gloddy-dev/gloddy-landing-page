@@ -2,10 +2,14 @@ import Header from './components/Header';
 import HeroSection from './templates/HeroSection';
 import ProblemSection from './templates/ProblemSection';
 import MiddleBanner from './templates/MiddleBanner';
-import Introduce from './templates/Introduce';
-import Advantage from '@/app/templates/Advantage';
-import Review from '@/app/templates/Review';
-import Process from '@/app/templates/Process';
+import IntroduceSection from './templates/IntroduceSection';
+import AdvantageSection from '@/app/templates/AdvantageSection';
+import ReviewSection from '@/app/templates/ReviewSection';
+import ProcessSection from '@/app/templates/ProcessSection';
+import FormSection from '@/app/templates/FormSection';
+import { FaqSection } from '@/app/templates/FaqSection';
+import { FinalBanner } from '@/app/templates/FinalBanner';
+import { Footer } from '@/app/templates/Footer';
 
 export default function Home() {
   return (
@@ -14,10 +18,14 @@ export default function Home() {
       <HeroSection />
       <ProblemSection />
       <MiddleBanner />
-      <Introduce />
-      <Advantage />
-      <Process />
-      <Review />
+      <IntroduceSection />
+      <AdvantageSection />
+      <ProcessSection />
+      <ReviewSection />
+      <FormSection />
+      <FaqSection />
+      <FinalBanner />
+      <Footer />
     </main>
   );
 }

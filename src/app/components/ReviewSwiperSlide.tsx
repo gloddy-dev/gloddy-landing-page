@@ -86,12 +86,11 @@ export default function ReviewSwiperSlide() {
         {({ isActive }) => {
           handleSwiperSliderActivate(slide1, isActive);
           return (
-            <div ref={slide1} className={'relative w-full h-full'}>
+            <div ref={slide1} className={'relative w-full h-full object-cover'}>
               <Image
                 className={'rounded-2xl'}
                 src={reviewContents[0].image}
                 alt={'swiper-image'}
-                objectFit={'cover'}
                 fill
                 sizes={'1000px'}
               />
@@ -124,14 +123,13 @@ export default function ReviewSwiperSlide() {
         {({ isActive }) => {
           handleSwiperSliderActivate(slide2, isActive);
           return (
-            <div ref={slide2} className={'relative w-full h-full'}>
+            <div ref={slide2} className={'relative w-full h-full object-cover'}>
               <Image
                 className={'rounded-2xl'}
                 src={reviewContents[1].image}
                 alt={'swiper-image'}
                 fill
                 sizes={'1000px'}
-                objectFit={'cover'}
               />
               <div
                 className={
@@ -162,14 +160,13 @@ export default function ReviewSwiperSlide() {
         {({ isActive }) => {
           handleSwiperSliderActivate(slide3, isActive);
           return (
-            <div ref={slide3} className={'relative w-full h-full'}>
+            <div ref={slide3} className={'relative w-full h-full object-cover'}>
               <Image
                 className={'rounded-2xl'}
                 src={reviewContents[2].image}
                 alt={'swiper-image'}
                 fill
                 sizes={'1000px'}
-                objectFit={'cover'}
               />
               <div
                 className={
@@ -200,14 +197,13 @@ export default function ReviewSwiperSlide() {
         {({ isActive }) => {
           handleSwiperSliderActivate(slide4, isActive);
           return (
-            <div ref={slide4} className={'relative w-full h-full'}>
+            <div ref={slide4} className={'relative w-full h-full object-cover'}>
               <Image
                 className={'rounded-2xl'}
                 src={reviewContents[3].image}
                 alt={'swiper-image'}
                 fill
                 sizes={'1000px'}
-                objectFit={'center'}
               />
               <div
                 className={

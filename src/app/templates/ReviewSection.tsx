@@ -2,7 +2,7 @@
 
 import ReviewSwiperSlide from '@/app/components/ReviewSwiperSlide';
 
-export default function Review() {
+export default function ReviewSection() {
   return (
     <section className="flex flex-col justify-center items-center w-full h-screen max-h-[1080px]">
       <div className="flex flex-col gap-16 w-full my-auto h-full justify-center">
