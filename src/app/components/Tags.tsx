@@ -6,7 +6,7 @@ import gsap from 'gsap';
 import MicIcon from '/public/mic.png';
 import LensIcon from '/public/lens.png';
 import PageIcon from '/public/page.png';
-import PersonIcon from '/public/Person.png';
+import PersonIcon from '/public/person.png';
 
 const tags = [
   { id: 'tag1', image: MicIcon, title: '통역 단기 인력' },
