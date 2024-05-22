@@ -4,11 +4,11 @@ import Input from '@/app/components/Input';
 import TextArea from '@/app/components/TextArea';
 import Dropdown, { DropDownOptionType } from '@/app/components/DropDown';
 import { useState } from 'react';
-import { PersonalInfo } from '@/app/components/PersonalInfo';
-import Button from '@/app/components/Button';
+import Image from 'next/image';
 
 export default function Form() {
   const [doprdown, setDropdown] = useState<string>('선택');
+  const [agreeCheck, setAgreeCheck] = useState<boolean>(false);
   const dropdownOptions: DropDownOptionType[] = [
     {
       name: '단기/파트타임',
@@ -135,7 +135,15 @@ export default function Form() {
             <span className={'text-xl font-semibold'}>
               위 내용에 동의합니다.<span className={'text-[#E94735]'}>*</span>
             </span>
-            <input type={'radio'} required />
+
+            <Image
+              className={'m-auto'}
+              onClick={() => setAgreeCheck((pre) => !pre)}
+              src={agreeCheck ? '/checkbox-check.png' : '/checkbox.png'}
+              alt={'checkbox'}
+              width={24}
+              height={24}
+            />
           </div>
         </div>
       </div>

@@ -43,10 +43,13 @@ export default function ProcessContent({
   }, [focus]);
 
   return (
-    <div className={'flex gap-5 w-full cursor-pointer'} onClick={onClick}>
+    <div
+      className={'flex gap-5 w-[95%] lg:w-full cursor-pointer'}
+      onClick={onClick}
+    >
       <div
         className={twMerge(
-          'flex justify-center items-center text-white w-8 h-8 text-xl rounded-full',
+          'flex justify-center items-center text-white w-6 h-6 lg:w-8 lg:h-8  lg:text-xl rounded-full',
           focus ? colorSet[index] : 'bg-[#99999F]',
         )}
       >
@@ -55,7 +58,7 @@ export default function ProcessContent({
       <div className={'flex flex-col gap-4'}>
         <div
           className={twMerge(
-            'text-3xl font-bold',
+            'text-2xl lg:text-3xl font-bold',
             focus ? '' : 'text-[#99999F]',
           )}
         >

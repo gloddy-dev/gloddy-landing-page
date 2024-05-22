@@ -44,13 +44,21 @@ export default function ProcessSection() {
   }, [focusProcess]);
 
   return (
-    <section className="flex flex-col justify-center items-center w-full h-screen max-h-[1080px]">
-      <div className="flex flex-col gap-20 max-w-7xl w-full my-auto h-full justify-center">
-        <div className={'text-5xl font-bold'}>
+    <section className="flex flex-col justify-center items-center w-full h-full lg:h-screen lg:max-h-[1080px]  my-24 lg:my-0">
+      <div className="flex flex-col gap-12 lg:gap-20 max-w-7xl w-full my-auto h-full justify-center break-keep">
+        <div
+          className={
+            'ml-2 lg:ml-0 text-3xl lg:text-5xl font-bold w-[80%] lg:w-full'
+          }
+        >
           채용은 이런 과정으로 이루어집니다.
         </div>
-        <div className={'flex w-full'}>
-          <div className={'flex flex-col w-full justify-evenly items-center'}>
+        <div className={'flex flex-col gap-6 lg:gap-0 lg:flex-row w-full'}>
+          <div
+            className={
+              'flex flex-col gap-2 lg:gap-0 w-full justify-evenly items-center'
+            }
+          >
             {processContent.map((process, index) => (
               <ProcessContent
                 key={`${process.title}-${index}`}
@@ -62,7 +70,7 @@ export default function ProcessSection() {
               />
             ))}
           </div>
-          <div className={'relative w-full h-full'}>
+          <div className={'relative mx-auto w-[95%] lg:w-full h-full'}>
             <div
               ref={container}
               className={

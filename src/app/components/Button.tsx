@@ -9,7 +9,7 @@ interface ButtonProps {
 }
 
 const buttonSize = {
-  lg: 'px-5 py-2 text-xl',
+  lg: 'px-5 py-2 lg:text-xl',
   sm: 'px-4 py-[10px] text-sm',
 };
 

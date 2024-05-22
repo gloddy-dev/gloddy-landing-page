@@ -92,10 +92,10 @@ interface TagProps {
 function Tag({ image, title }: TagProps) {
   return (
     <div className="flex justify-center items-center gap-3 font-bold p-2">
-      <div className="relative w-20 h-20">
+      <div className={'relative w-10 lg:w-20 h-10 lg:h-20'}>
         <Image src={image} fill sizes="80px" alt={`${title}-image`} />
       </div>
-      <span className="text-4xl lg:text-6xl">{title}</span>
+      <span className="text-3xl lg:text-6xl">{title}</span>
     </div>
   );
 }

@@ -72,7 +72,7 @@ export default function ReviewSwiperSlide() {
   return (
     <Swiper
       modules={[Autoplay]}
-      className={'h-full'}
+      className={'h-full '}
       spaceBetween={20}
       slidesPerView={'auto'}
       loop={true}
