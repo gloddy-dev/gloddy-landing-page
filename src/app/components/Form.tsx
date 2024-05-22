@@ -137,7 +137,7 @@ export default function Form() {
             </span>
 
             <Image
-              className={'m-auto'}
+              className={'m-auto mr-0'}
               onClick={() => setAgreeCheck((pre) => !pre)}
               src={agreeCheck ? '/checkbox-check.png' : '/checkbox.png'}
               alt={'checkbox'}
