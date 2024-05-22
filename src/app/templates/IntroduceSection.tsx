@@ -3,7 +3,7 @@ import { PersonalInfo } from '@/app/components/PersonalInfo';
 
 export default function IntroduceSection() {
   return (
-    <section className="flex flex-col justify-center items-center w-full h-full lg:h-screen lg:max-h-[1080px] my-24 lg:my-0">
+    <section className="flex flex-col justify-center items-center w-full h-full lg:h-screen lg:max-h-[1080px]">
       <div className="flex flex-col gap-8 lg:gap-16 max-w-7xl w-full my-auto h-full justify-center">
         <div className="flex flex-col text-3xl lg:text-4xl ml-2 lg:ml-0 w-[90%] lg:w-full break-keep">
           <span className="text-xl lg:text-2xl text-[#99999F] mb-6">

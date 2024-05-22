@@ -72,17 +72,17 @@ export default function ReviewSwiperSlide() {
   return (
     <Swiper
       modules={[Autoplay]}
-      className={'h-full '}
+      className={'h-full'}
       spaceBetween={20}
       slidesPerView={'auto'}
       loop={true}
       autoplay={{
-        delay: 3000,
+        delay: 3000000,
         disableOnInteraction: false,
       }}
       centeredSlides={true}
     >
-      <SwiperSlide className={'max-w-5xl my-auto'}>
+      <SwiperSlide className={'max-w-5xl mt-auto'}>
         {({ isActive }) => {
           handleSwiperSliderActivate(slide1, isActive);
           return (
@@ -96,18 +96,20 @@ export default function ReviewSwiperSlide() {
               />
               <div
                 className={
-                  'flex absolute flex-col w-full h-full z-20 text-white p-14 justify-between'
+                  'flex absolute flex-col w-full h-full z-20 text-white p-6 lg:p-14 justify-between'
                 }
               >
                 <div className={'flex flex-col gap-6'}>
                   <div
-                    className={'px-5 py-[6px] rounded-full w-fit bg-black/75'}
+                    className={
+                      'px-3 py-1 lg:px-5 lg:py-[6px] text-sm lg:text-md rounded-full w-fit bg-black/75'
+                    }
                   >
                     {reviewContents[0].tag}
                   </div>
                   <div
                     className={
-                      'font-bold text-4xl whitespace-pre-wrap leading-[3.5rem]'
+                      'font-bold text-2xl lg:text-4xl whitespace-pre-wrap lg:leading-[3.5rem] break-keep'
                     }
                   >
                     {reviewContents[0].desc}
@@ -119,7 +121,7 @@ export default function ReviewSwiperSlide() {
           );
         }}
       </SwiperSlide>
-      <SwiperSlide className={'max-w-5xl my-auto'}>
+      <SwiperSlide className={'max-w-5xl mt-auto'}>
         {({ isActive }) => {
           handleSwiperSliderActivate(slide2, isActive);
           return (
@@ -133,18 +135,20 @@ export default function ReviewSwiperSlide() {
               />
               <div
                 className={
-                  'flex absolute flex-col w-full h-full z-20 text-white p-14 justify-between'
+                  'flex absolute flex-col w-full h-full z-20 text-white p-6 lg:p-14 justify-between'
                 }
               >
                 <div className={'flex flex-col gap-6'}>
                   <div
-                    className={'px-5 py-[6px] rounded-full w-fit bg-black/75'}
+                    className={
+                      'px-3 py-1 lg:px-5 lg:py-[6px] text-sm lg:text-md rounded-full w-fit bg-black/75'
+                    }
                   >
                     {reviewContents[1].tag}
                   </div>
                   <div
                     className={
-                      'font-bold text-4xl whitespace-pre-wrap leading-[3.5rem]'
+                      'font-bold text-2xl lg:text-4xl whitespace-pre-wrap lg:leading-[3.5rem] break-keep'
                     }
                   >
                     {reviewContents[1].desc}
@@ -156,7 +160,7 @@ export default function ReviewSwiperSlide() {
           );
         }}
       </SwiperSlide>
-      <SwiperSlide className={'max-w-5xl my-auto'}>
+      <SwiperSlide className={'max-w-5xl mt-auto'}>
         {({ isActive }) => {
           handleSwiperSliderActivate(slide3, isActive);
           return (
@@ -170,18 +174,20 @@ export default function ReviewSwiperSlide() {
               />
               <div
                 className={
-                  'flex absolute flex-col w-full h-full z-20 text-white p-14 justify-between'
+                  'flex absolute flex-col w-full h-full z-20 text-white p-6 lg:p-14 justify-between'
                 }
               >
                 <div className={'flex flex-col gap-6'}>
                   <div
-                    className={'px-5 py-[6px] rounded-full w-fit bg-black/75'}
+                    className={
+                      'px-3 py-1 lg:px-5 lg:py-[6px] text-sm lg:text-md rounded-full w-fit bg-black/75'
+                    }
                   >
                     {reviewContents[2].tag}
                   </div>
                   <div
                     className={
-                      'font-bold text-4xl whitespace-pre-wrap leading-[3.5rem]'
+                      'font-bold text-2xl lg:text-4xl whitespace-pre-wrap lg:leading-[3.5rem] break-keep'
                     }
                   >
                     {reviewContents[2].desc}
@@ -193,7 +199,7 @@ export default function ReviewSwiperSlide() {
           );
         }}
       </SwiperSlide>
-      <SwiperSlide className={'max-w-5xl my-auto'}>
+      <SwiperSlide className={'max-w-5xl mt-auto'}>
         {({ isActive }) => {
           handleSwiperSliderActivate(slide4, isActive);
           return (
@@ -207,18 +213,20 @@ export default function ReviewSwiperSlide() {
               />
               <div
                 className={
-                  'flex absolute flex-col w-full h-full z-20 text-white p-14 justify-between'
+                  'flex absolute flex-col w-full h-full z-20 text-white p-6 lg:p-14 justify-between'
                 }
               >
                 <div className={'flex flex-col gap-6'}>
                   <div
-                    className={'px-5 py-[6px] rounded-full w-fit bg-black/75'}
+                    className={
+                      'px-3 py-1 lg:px-5 lg:py-[6px] text-sm lg:text-md rounded-full w-fit bg-black/75'
+                    }
                   >
                     {reviewContents[3].tag}
                   </div>
                   <div
                     className={
-                      'font-bold text-4xl whitespace-pre-wrap leading-[3.5rem]'
+                      'font-bold text-2xl lg:text-4xl whitespace-pre-wrap lg:leading-[3.5rem] break-keep'
                     }
                   >
                     {reviewContents[3].desc}

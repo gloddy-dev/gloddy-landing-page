@@ -31,7 +31,7 @@ export function ToggleCard({ title, desc }: ToggleCardProps) {
   }, [open]);
 
   return (
-    <div className={'w-full'}>
+    <div className={'mx-auto w-[95%] lg:w-full'}>
       <div
         className={twMerge(
           'w-full cursor-pointer border border-[#E1E1E8] p-6 rounded-lg text-[#4D4D4A]',
@@ -39,7 +39,7 @@ export function ToggleCard({ title, desc }: ToggleCardProps) {
         )}
         onClick={() => setOpen((pre) => !pre)}
       >
-        <div className={'flex justify-between text-2xl'}>
+        <div className={'flex justify-between text-lg lg:text-2xl'}>
           <div>{title}</div>
           <Image
             className={'my-auto'}
@@ -53,7 +53,7 @@ export function ToggleCard({ title, desc }: ToggleCardProps) {
       <div
         ref={container}
         className={twMerge(
-          'p-6 h-0 border border-[#E1E1E8] whitespace-pre-wrap bg-[#F8F8F9] rounded-xl rounded-t-0',
+          'text-sm lg:text-md p-6 h-0 border border-[#E1E1E8] whitespace-pre-wrap bg-[#F8F8F9] rounded-xl rounded-t-0',
           open ? 'rounded-t-none' : '',
         )}
       >

@@ -35,7 +35,11 @@ export default function Header() {
           width={120}
           height={44}
         />
-        <Button message="1:1 상담 신청" size="sm" onClick={scrollToMeeting} />
+        <Button
+          message="1:1 상담 신청"
+          size="sm"
+          onClick={() => scrollToMeeting('meeting')}
+        />
       </div>
     </header>
   );

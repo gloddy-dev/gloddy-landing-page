@@ -2,13 +2,18 @@ import { ToggleCard } from '@/app/components/ToggleCard';
 
 export function FaqSection() {
   return (
-    <section className={'w-full h-screen max-h-[900px]'}>
+    <section
+      id={'faq'}
+      className={'w-full h-[50vh] lg:h-screen lg:max-h-[900px]'}
+    >
       <div
         className={
           'flex flex-col w-full max-w-7xl h-full gap-10 mx-auto justify-center items-center'
         }
       >
-        <div className={'text-5xl font-bold text-center'}>자주 묻는 질문</div>
+        <div className={'text-3xl lg:text-5xl font-bold text-center'}>
+          자주 묻는 질문
+        </div>
 
         <div className={'w-full flex flex-col gap-2'}>
           <ToggleCard
@@ -22,11 +27,11 @@ export function FaqSection() {
             desc={
               <span>
                 {
-                  '모집 유형에 따라 수수료가 달라집니다.\n- 파트 타임: 기업 측과 협상 후 수수료 산정\n- 인턴,정규직: 채용 확정 후 대금 지불하는 후불형 서비스\n                        합격자 연봉의 7% -> 5% 수수료 발생. '
+                  '모집 유형에 따라 수수료가 달라집니다.\n- 파트 타임: 기업 측과 협상 후 수수료 산정\n- 인턴,정규직: 채용 확정 후 대금 지불하는 후불형 서비스\n        합격자 연봉의 7% -> 5% 수수료 발생. '
                 }
                 <span
                   className={
-                    'text-[#E94735] text-sm bg-[#FEF6F5] py-1 px-1 rounded-md border border-[#E94735]'
+                    'text-[#E94735] text-xs lg:text-sm bg-[#FEF6F5] py-[2px] px-1 rounded-md border border-[#E94735]'
                   }
                 >
                   특가할인중

@@ -35,9 +35,11 @@ export default function Dropdown({
 
   return (
     <div className={'w-full h-full'}>
-      <label htmlFor={id} className="text-xl">
+      <label htmlFor={id} className="lg:text-xl">
         {label}
-        <span className={`${important ? 'text-xl text-[#E94735]' : 'hidden'}`}>
+        <span
+          className={`${important ? 'lg:text-xl text-[#E94735]' : 'hidden'}`}
+        >
           *
         </span>
       </label>
@@ -47,9 +49,9 @@ export default function Dropdown({
       >
         <div
           className={twMerge(
-            'flex justify-between rounded-lg p-4 text-xl',
+            'flex justify-between rounded-lg p-4 lg:text-xl',
             isOpen
-              ? 'border border-t-[#E1E1E8] border-l-[#E1E1E8] border-r-[#E1E1E8] border-b-0 rounded-b-none'
+              ? 'border border-t-[#E1E1E8] border-l-[#E1E1E8] border-r-[#E1E1E8] border-b-0 rounded-b-none shadow-lg'
               : 'border border-[#E1E1E8]',
           )}
         >
@@ -75,14 +77,14 @@ export default function Dropdown({
             className={twMerge(
               'absolute w-full rounded-lg bg-white',
               isOpen
-                ? 'border border-b-[#E1E1E8] border-l-[#E1E1E8] border-r-[#E1E1E8] border-t-0 rounded-t-none'
+                ? 'border border-b-[#E1E1E8] border-l-[#E1E1E8] border-r-[#E1E1E8] border-t-0 rounded-t-none shadow-lg'
                 : 'border border-[#E1E1E8]',
             )}
           >
             {options.map((option) => (
               <div
                 key={option.name}
-                className="w-full text-xl hover:bg-brand-color p-4 text-primary-dark hover:rounded-lg hover:bg-gray-100"
+                className="w-full lg:text-xl hover:bg-brand-color p-4 text-primary-dark hover:rounded-lg hover:bg-gray-100"
                 onClick={() => handleClickOption(option)}
               >
                 {option.name}

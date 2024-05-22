@@ -44,7 +44,7 @@ export default function ProcessSection() {
   }, [focusProcess]);
 
   return (
-    <section className="flex flex-col justify-center items-center w-full h-full lg:h-screen lg:max-h-[1080px]  my-24 lg:my-0">
+    <section className="flex flex-col justify-center items-center w-full h-full lg:h-screen lg:max-h-[1080px]">
       <div className="flex flex-col gap-12 lg:gap-20 max-w-7xl w-full my-auto h-full justify-center break-keep">
         <div
           className={

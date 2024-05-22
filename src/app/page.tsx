@@ -13,7 +13,7 @@ import { Footer } from '@/app/templates/Footer';
 
 export default function Home() {
   return (
-    <main>
+    <main className={'flex flex-col gap-28 lg:gap-0'}>
       <Header />
       <HeroSection />
       <ProblemSection />
@@ -24,8 +24,10 @@ export default function Home() {
       <ReviewSection />
       <FormSection />
       <FaqSection />
-      <FinalBanner />
-      <Footer />
+      <div>
+        <FinalBanner />
+        <Footer />
+      </div>
     </main>
   );
 }

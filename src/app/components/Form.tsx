@@ -27,10 +27,12 @@ export default function Form() {
   return (
     <form
       className={
-        'flex flex-col gap-12 w-full bg-white rounded-2xl p-14 border border-[#EFEFEF]'
+        'flex flex-col gap-12 w-full bg-white rounded-2xl px-2 py-10 lg:p-14 border border-[#EFEFEF]'
       }
     >
-      <div className={'text-[#E94735] text-end'}>* 필수 입력 사항입니다.</div>
+      <div className={'text-[#E94735] text-sm lg:text-md text-end'}>
+        * 필수 입력 사항입니다.
+      </div>
       <div className={'flex w-full gap-6 flex-wrap lg:flex-nowrap'}>
         <Input
           id={'e-mail'}
@@ -77,16 +79,16 @@ export default function Form() {
         }
       />
       <div className={'flex flex-col gap-4'}>
-        <span className={'text-2xl font-semibold'}>
+        <span className={'text-xl lg:text-2xl font-semibold'}>
           개인정보 수집 및 이용에 대한 안내
           <span className={'text-[#E94735]'}>*</span>
         </span>
         <div
           className={
-            'flex flex-col gap-12 w-full h-full p-10 border border-[#E1E1E8] rounded-xl whitespace-pre-wrap'
+            'flex flex-col gap-12 w-full h-full p-6 lg:p-10 border border-[#E1E1E8] rounded-xl whitespace-pre-wrap'
           }
         >
-          <div className={'text-xl text-[#4D4D4A] leading-8'}>
+          <div className={'lg:text-xl text-[#4D4D4A] leading-8'}>
             {
               '(주)글로디는 상담 문의를 처리하기 위해 다음과 같이 개인정보를 수집 및 이용하며,\n이용자의 개인정보를 안정하게 취급하는데 최선을 다하고 있습니다.'
             }
@@ -94,10 +96,10 @@ export default function Form() {
 
           <div
             className={
-              'flex w-full rounded-xl border text-[#4D4D4A] border-[#E1E1E8] border-l-0 border-r-0'
+              'flex flex-col lg:flex-row w-full rounded-xl border text-[#4D4D4A] border-[#E1E1E8] border-l-0 border-r-0'
             }
           >
-            <div className={'flex flex-col text-xl w-full'}>
+            <div className={'flex flex-col lg:text-xl w-full'}>
               <div className={'bg-[#F2F3F7] p-4 rounded-tl-xl'}>수집항목</div>
               <div className={'p-4'}>
                 {'(필수) 기업정보(기업명)\n(필수) 이름, 이메일, 휴대폰 번호'}
@@ -105,23 +107,19 @@ export default function Form() {
             </div>
             <div
               className={
-                'flex flex-col text-xl w-full border border-[#E1E1E8] border-t-0 border-b-0'
+                'flex flex-col lg:text-xl w-full border border-[#E1E1E8] border-l-0 border-r-0 lg:border-l-1 lg:border-r-1   lg:border-t-0 lg:border-b-0'
               }
             >
-              <div className={'bg-[#F2F3F7] p-4'}>수집항목</div>
-              <div className={'p-4'}>
-                {'(필수) 기업정보(기업명)\n(필수) 이름, 이메일, 휴대폰 번호'}
-              </div>
+              <div className={'bg-[#F2F3F7] p-4'}>수집목적</div>
+              <div className={'p-4'}>{'서비스 상담\n서비스 안내 및 지원'}</div>
             </div>
-            <div className={'flex flex-col text-xl w-full'}>
-              <div className={'bg-[#F2F3F7] rounded-tr p-4'}>수집항목</div>
-              <div className={'p-4'}>
-                {'(필수) 기업정보(기업명)\n(필수) 이름, 이메일, 휴대폰 번호'}
-              </div>
+            <div className={'flex flex-col lg:text-xl w-full'}>
+              <div className={'bg-[#F2F3F7] rounded-tr p-4'}>보유기간</div>
+              <div className={'p-4'}>{'3년 보관 후 삭제'}</div>
             </div>
           </div>
 
-          <div className={'text-xl text-[#4D4D4A] leading-8'}>
+          <div className={'lg:text-xl text-[#4D4D4A] leading-8'}>
             {
               '위 동의를 거부할 권리가 있으며, 동의를 거부하실 경우 문의 처리 및 결과 회신이 제한됩니다.'
             }
@@ -132,7 +130,7 @@ export default function Form() {
               'flex justify-between w-full bg-[#E8EDFC] p-4 rounded-xl'
             }
           >
-            <span className={'text-xl font-semibold'}>
+            <span className={'lg:text-xl font-semibold'}>
               위 내용에 동의합니다.<span className={'text-[#E94735]'}>*</span>
             </span>
 

@@ -4,7 +4,7 @@ import ReviewSwiperSlide from '@/app/components/ReviewSwiperSlide';
 
 export default function ReviewSection() {
   return (
-    <section className="flex flex-col justify-center items-center w-full h-screen max-h-[1080px]  my-24 lg:my-0">
+    <section className="flex flex-col justify-center items-center w-full h-screen max-h-[600px] lg:max-h-[1080px]">
       <div className="flex flex-col gap-16 w-full my-auto h-full justify-center">
         <div
           className={
@@ -23,7 +23,7 @@ export default function ReviewSection() {
           </span>
         </div>
 
-        <div className={'w-full h-full max-h-[600px]'}>
+        <div className={'w-full h-full max-h-[400px] lg:max-h-[600px]'}>
           <ReviewSwiperSlide />
         </div>
       </div>

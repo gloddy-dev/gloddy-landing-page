@@ -22,7 +22,10 @@ export default function HeroSection() {
           </span>
           <span>기업 핏에 딱 맞는 외국인 맞춤 채용 솔루션</span>
         </div>
-        <Button message="1:1 상담 신청하기" onClick={scrollToMeeting} />
+        <Button
+          message="1:1 상담 신청하기"
+          onClick={() => scrollToMeeting('meeting')}
+        />
       </div>
       <Image
         src={'/background.png'}

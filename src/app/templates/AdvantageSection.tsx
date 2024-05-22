@@ -1,8 +1,10 @@
+'use client';
 import Image from 'next/image';
+import { scrollToMeeting } from '@/app/util/scroll';
 
 export default function AdvantageSection() {
   return (
-    <section className="flex flex-col justify-center items-center w-full h-full lg:h-screen lg:max-h-[1080px] my-24 lg:my-0">
+    <section className="flex flex-col justify-center items-center w-full h-full lg:h-screen lg:max-h-[1080px]">
       <div className="flex flex-col gap-12 max-w-7xl w-full h-full items-start lg:items-center justify-center break-keep">
         <div
           className={
@@ -27,7 +29,7 @@ export default function AdvantageSection() {
               >
                 검증된 외국인 선발
               </span>
-              <span className={'whitespace-pre-wrap text-xl text-[#4A4A4D]'}>
+              <span className={'whitespace-pre-wrap lg:text-xl text-[#4A4A4D]'}>
                 {
                   '불특정 다수가 아닌,\n관리중인 커뮤니티와 홍보 채널로\n검증된 학생을 우선 추천합니다.'
                 }
@@ -50,7 +52,7 @@ export default function AdvantageSection() {
               <span className={'text-2xl lg:text-4xl font-bold'}>
                 매니저 전담 관리
               </span>
-              <span className={'whitespace-pre-wrap text-xl text-[#4A4A4D]'}>
+              <span className={'whitespace-pre-wrap lg:text-xl text-[#4A4A4D]'}>
                 {
                   '공고 등록, 홍보, 면접 전/후까지\n전체 과정을 담당 매니저가 서포트'
                 }
@@ -59,12 +61,19 @@ export default function AdvantageSection() {
             <div className="flex flex-row justify-between card-gradientr-bg3 p-7 lg:p-14 h-full grow rounded-2xl">
               <div className={'flex gap-6 flex-col justify-between '}>
                 <div className={'flex gap-1 flex-col'}>
-                  <span className={'text-4xl font-bold'}>결제는 나중에!</span>
-                  <div className={'text-xl text-[#9B9A96] cursor-pointer'}>
+                  <span className={'text-2xl lg:text-4xl font-bold'}>
+                    결제는 나중에!
+                  </span>
+                  <div
+                    onClick={() => scrollToMeeting('faq')}
+                    className={'lg:text-xl text-[#9B9A96] cursor-pointer'}
+                  >
                     {'비용 안내 보러가기 →'}
                   </div>
                 </div>
-                <span className={'whitespace-pre-wrap text-xl text-[#4A4A4D]'}>
+                <span
+                  className={'whitespace-pre-wrap lg:text-xl text-[#4A4A4D]'}
+                >
                   {'최종 인원 모집 완료 후\n비용이 청구되는 후불형 서비스'}
                 </span>
               </div>

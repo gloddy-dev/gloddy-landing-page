@@ -12,10 +12,12 @@ export default function FormSection() {
     >
       <div className="flex flex-col gap-16 w-full max-w-7xl my-24 h-full justify-center">
         <div className={'flex flex-col text-center gap-4'}>
-          <span className={'text-2xl text-[#99999F]'}>1:1 상담 신청</span>
+          <span className={'text-xl lg:text-2xl text-[#99999F]'}>
+            1:1 상담 신청
+          </span>
           <span
             className={
-              'whitespace-pre-wrap font-bold text-6xl leading-[4.5rem]'
+              'whitespace-pre-wrap font-bold text-4xl lg:text-6xl leading-10 lg:leading-[4.5rem]'
             }
           >
             {'Gloddy Recrutier로\n함께할 인재를 찾아보세요'}
@@ -23,7 +25,10 @@ export default function FormSection() {
         </div>
         <Form />
         <div className={'w-fit mx-auto'}>
-          <Button message={'1:1 상담 신청하기'} onClick={scrollToMeeting} />
+          <Button
+            message={'1:1 상담 신청하기'}
+            onClick={() => scrollToMeeting('meeting')}
+          />
         </div>
       </div>
     </section>

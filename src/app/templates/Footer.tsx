@@ -3,7 +3,7 @@ export function Footer() {
     <footer className={'w-full h-screen max-h-56 bg-[#232426]'}>
       <div
         className={
-          'flex flex-col  gap-6 text-[16px] text-white/55 w-full max-w-7xl h-full mx-auto justify-center'
+          'flex flex-col gap-6 text-sm lg:text-[16px] text-white/55 w-[90%] lg:w-full max-w-7xl h-full mx-auto justify-center break-keep'
         }
       >
         <div>{'(주)글로디'}</div>
