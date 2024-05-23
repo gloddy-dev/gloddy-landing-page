@@ -265,16 +265,20 @@ export default function Form() {
                   control={control}
                   rules={{ required: '동의는 필수입니다.' }}
                   render={({ field }) => (
-                    <Image
-                      className={'m-auto mr-0'}
+                    <div
+                      className="flex justify-center items-center w-8 h-8"
                       onClick={() => field.onChange(!field.value)}
-                      src={
-                        field.value ? '/checkbox-check.png' : '/checkbox.png'
-                      }
-                      alt={'checkbox'}
-                      width={24}
-                      height={24}
-                    />
+                    >
+                      <Image
+                        className={'m-auto'}
+                        src={
+                          field.value ? '/checkbox-check.png' : '/checkbox.png'
+                        }
+                        alt={'checkbox'}
+                        width={24}
+                        height={24}
+                      />
+                    </div>
                   )}
                 />
               </div>
