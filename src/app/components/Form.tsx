@@ -121,7 +121,7 @@ export default function Form() {
             <Input
               id={'phonenumber'}
               label={'휴대폰 번호'}
-              placeholder={'담당자 휴대폰 번호를-없이 입력해 주세요.'}
+              placeholder={'담당자 휴대폰 번호를 -없이 입력해 주세요.'}
               register={register('phonenumber', {
                 required: true,
                 pattern: {
