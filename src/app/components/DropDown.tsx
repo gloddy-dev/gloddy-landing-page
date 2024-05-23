@@ -1,6 +1,12 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
+import {
+  UseFormRegisterReturn,
+  UseFormSetValue,
+  UseFormTrigger,
+} from 'react-hook-form';
+import { FormValue } from '../templates/FormSection';
 
 export type DropDownOptionType = {
   name: string;
@@ -9,20 +15,27 @@ export type DropDownOptionType = {
 };
 
 interface DropDownProps {
-  id: string;
+  id?: 'type';
   label: string;
   important?: boolean;
   options: DropDownOptionType[];
   className?: string;
   placeholder: string;
+  errors?: {
+    [key: string]: {
+      message?: string;
+    };
+  };
+  onSelect: (value: string | number) => void;
 }
-
 export default function Dropdown({
-  id,
+  id = 'type',
   options,
   label,
   important = true,
   placeholder,
+  errors,
+  onSelect,
 }: DropDownProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [mainContentState, setMainContentState] = useState<string | null>(null);
@@ -31,11 +44,12 @@ export default function Dropdown({
     setMainContentState(option.name);
     option.onClick();
     setIsOpen(false);
+    onSelect(option.name);
   };
 
   return (
     <div className={'w-full h-full'}>
-      <label htmlFor={id} className="lg:text-xl">
+      <label className="lg:text-xl">
         {label}
         <span
           className={`${important ? 'lg:text-xl text-[#E94735]' : 'hidden'}`}
@@ -91,6 +105,11 @@ export default function Dropdown({
               </div>
             ))}
           </div>
+        )}
+        {errors && errors[id] && (
+          <span className="text-[#E94735] lg:text-xl pl-1">
+            {errors[id]?.message || '필수 입력 사항입니다.'}
+          </span>
         )}
       </div>
     </div>

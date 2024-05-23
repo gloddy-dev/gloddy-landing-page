@@ -5,7 +5,8 @@ import { twMerge } from 'tailwind-merge';
 interface ButtonProps {
   message: string;
   size?: 'lg' | 'sm';
-  onClick: () => void;
+  onClick?: () => void;
+  type?: 'submit' | 'button';
 }
 
 const buttonSize = {
@@ -13,9 +14,15 @@ const buttonSize = {
   sm: 'px-4 py-[10px] text-sm',
 };
 
-export default function Button({ onClick, message, size = 'lg' }: ButtonProps) {
+export default function Button({
+  type = 'button',
+  onClick,
+  message,
+  size = 'lg',
+}: ButtonProps) {
   return (
-    <div
+    <button
+      type={type}
       className={twMerge(
         'bg-[#1249FC]/[88%] rounded-3xl text-white cursor-pointer',
         buttonSize[size],
@@ -23,6 +30,6 @@ export default function Button({ onClick, message, size = 'lg' }: ButtonProps) {
       onClick={onClick}
     >
       {message}
-    </div>
+    </button>
   );
 }

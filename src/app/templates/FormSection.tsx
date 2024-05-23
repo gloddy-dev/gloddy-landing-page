@@ -1,8 +1,17 @@
 'use client';
 
 import Form from '@/app/components/Form';
-import Button from '@/app/components/Button';
-import { scrollToMeeting } from '@/app/util/scroll';
+
+export interface FormValue {
+  email: string;
+  uname: string;
+  phonenumber: string;
+  company: string;
+  descinfo: string;
+  type: string;
+  privateInfo: string;
+  country: string;
+}
 
 export default function FormSection() {
   return (
@@ -24,12 +33,6 @@ export default function FormSection() {
           </span>
         </div>
         <Form />
-        <div className={'w-fit mx-auto'}>
-          <Button
-            message={'1:1 상담 신청하기'}
-            onClick={() => scrollToMeeting('meeting')}
-          />
-        </div>
       </div>
     </section>
   );

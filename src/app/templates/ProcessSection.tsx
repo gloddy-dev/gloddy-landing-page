@@ -43,6 +43,14 @@ export default function ProcessSection() {
     gsap.to(container.current, { opacity: 1, duration: 0.01 });
   }, [focusProcess]);
 
+  useEffect(() => {
+    const switchFocusProcess = setInterval(() => {
+      setFocusProcess((pre) => (pre + 1) % 4);
+    }, 4000);
+
+    return () => clearInterval(switchFocusProcess);
+  }, []);
+
   return (
     <section className="flex flex-col justify-center items-center w-full h-full lg:h-screen lg:max-h-[1080px]">
       <div className="flex flex-col gap-12 lg:gap-20 max-w-7xl w-full my-auto h-full justify-center break-keep">

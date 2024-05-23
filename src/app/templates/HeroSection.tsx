@@ -24,7 +24,7 @@ export default function HeroSection() {
         </div>
         <Button
           message="1:1 상담 신청하기"
-          onClick={() => scrollToMeeting('meeting')}
+          onClick={() => scrollToMeeting('#meeting')}
         />
       </div>
       <Image

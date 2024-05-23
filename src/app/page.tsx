@@ -10,6 +10,7 @@ import FormSection from '@/app/templates/FormSection';
 import { FaqSection } from '@/app/templates/FaqSection';
 import { FinalBanner } from '@/app/templates/FinalBanner';
 import { Footer } from '@/app/templates/Footer';
+import { Suspense } from 'react';
 
 export default function Home() {
   return (

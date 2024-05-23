@@ -38,7 +38,7 @@ export default function Header() {
         <Button
           message="1:1 상담 신청"
           size="sm"
-          onClick={() => scrollToMeeting('meeting')}
+          onClick={() => scrollToMeeting('#meeting')}
         />
       </div>
     </header>

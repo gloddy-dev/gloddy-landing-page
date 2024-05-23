@@ -21,7 +21,7 @@ export function FinalBanner() {
         </span>
         <Button
           message={'1:1 상담 신청하기'}
-          onClick={() => scrollToMeeting('meeting')}
+          onClick={() => scrollToMeeting('#meeting')}
         />
       </div>
       <Image src={'/final-banner.png'} alt={'final-banner'} fill />
