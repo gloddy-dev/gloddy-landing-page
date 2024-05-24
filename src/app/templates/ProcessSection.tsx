@@ -8,6 +8,7 @@ import ProcessFour from '/public/process4.png';
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import ProcessContent from '@/app/components/ProcessContent';
+import { scrollToMeeting } from '../util/scroll';
 
 const processImageSet = [ProcessOne, ProcessTow, ProcessThree, ProcessFour];
 
@@ -26,7 +27,11 @@ const processContent = [
   },
   {
     title: '최종 선발 완료 후 수수료 정산',
-    desc: '비용 안내 보러가기 →',
+    desc: (
+      <span className="cursor-pointer" onClick={() => scrollToMeeting('#faq')}>
+        비용 안내 보러가기 →
+      </span>
+    ),
   },
 ];
 

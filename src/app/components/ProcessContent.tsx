@@ -1,11 +1,11 @@
 import gsap from 'gsap';
 import { twMerge } from 'tailwind-merge';
-import { useEffect, useRef } from 'react';
+import { ReactNode, useEffect, useRef } from 'react';
 
 export interface ProcessContentProps {
   index: number;
   title: string;
-  desc: string;
+  desc: ReactNode;
   focus: boolean;
   onClick: () => void;
 }
