@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function ProblemSection() {
   return (
@@ -9,12 +9,12 @@ export default function ProblemSection() {
             Gloddy는 이럴때 유용해요
           </span>
           <span className="font-bold">이런 고민하신 적</span>
-          <span className="font-light">있으신가요?</span>
+          <span className="font-normal">있으신가요?</span>
         </div>
         <div className="flex flex-col justify-center gap-4 lg:gap-8 h-fit lg:h-full my-auto lg:my-0 w-full max-w-3xl ml-auto">
           <div className="flex justify-between gap-6 mr-auto">
             <div className="relative m-auto w-[64px] h-[64px] lg:w-[96px] lg:h-[96px]">
-              <Image src={"/face3.png"} alt="face-image-1" fill sizes="96px" />
+              <Image src={'/face3.png'} alt="face-image-1" fill sizes="96px" />
             </div>
             <div className="flex flex-col text-xl lg:text-3xl gap-2 px-4 lg:px-8 py-3 lg:py-5 text-[#4A4A4D] speech-bubble bg-[#F2F3F6]">
               <span>외국인 인력이 필요한데</span>
@@ -24,7 +24,7 @@ export default function ProblemSection() {
 
           <div className="flex justify-between gap-6 ml-auto">
             <div className="relative m-auto w-[64px] h-[64px] lg:w-[96px] lg:h-[96px]">
-              <Image src={"/face1.png"} alt="face-image-1" fill sizes="96px" />
+              <Image src={'/face1.png'} alt="face-image-1" fill sizes="96px" />
             </div>
             <div className="flex flex-col text-xl lg:text-3xl gap-2 px-4 lg:px-8 py-3 lg:py-5 text-[#4A4A4D] speech-bubble bg-[#F2F3F6]">
               <span>기업 핏에 꼭 맞게</span>
@@ -36,7 +36,7 @@ export default function ProblemSection() {
 
           <div className="flex justify-between gap-6 mr-auto">
             <div className="relative m-auto w-[64px] h-[64px] lg:w-[96px] lg:h-[96px]">
-              <Image src={"/face2.png"} alt="face-image-1" fill sizes="96px" />
+              <Image src={'/face2.png'} alt="face-image-1" fill sizes="96px" />
             </div>
             <div className="flex flex-col text-xl lg:text-3xl gap-2 px-4 lg:px-8 py-3 lg:py-5 text-[#4A4A4D] speech-bubble bg-[#F2F3F6]">
               <span>모집부터 선발까지</span>

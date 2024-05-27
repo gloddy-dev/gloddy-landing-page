@@ -251,24 +251,22 @@ export default function Form() {
                   '위 동의를 거부할 권리가 있으며, 동의를 거부하실 경우 문의 처리 및 결과 회신이 제한됩니다.'
                 }
               </div>
-              <div
-                className={
-                  'flex justify-between w-full bg-[#E8EDFC] p-4 rounded-xl'
-                }
-              >
-                <span className={'lg:text-xl font-semibold'}>
-                  위 내용에 동의합니다.
-                  <span className={'text-[#E94735]'}>*</span>
-                </span>
-                <Controller
-                  name="privateInfo"
-                  control={control}
-                  rules={{ required: '동의는 필수입니다.' }}
-                  render={({ field }) => (
-                    <div
-                      className="flex justify-center items-center w-8 h-8"
-                      onClick={() => field.onChange(!field.value)}
-                    >
+              <Controller
+                name="privateInfo"
+                control={control}
+                rules={{ required: '동의는 필수입니다.' }}
+                render={({ field }) => (
+                  <div
+                    className={
+                      'flex justify-between w-full bg-[#E8EDFC] p-4 rounded-xl'
+                    }
+                    onClick={() => field.onChange(!field.value)}
+                  >
+                    <span className={'lg:text-xl font-semibold'}>
+                      위 내용에 동의합니다.
+                      <span className={'text-[#E94735]'}>*</span>
+                    </span>
+                    <div className="flex justify-center items-center w-8 h-8">
                       <Image
                         className={'m-auto'}
                         src={
@@ -279,9 +277,10 @@ export default function Form() {
                         height={24}
                       />
                     </div>
-                  )}
-                />
-              </div>
+                  </div>
+                )}
+              />
+
               {errors.privateInfo && (
                 <span className="text-[#E94735] lg:text-xl pl-1">
                   {errors.privateInfo.message}

@@ -88,6 +88,17 @@ export default function IntroduceSection() {
             </div>
           </div>
           <div className="relative w-full h-[300px] lg:h-full max-w-[606px] max-h-[500px] object-cover">
+            <div className="absolute top-6 lg:top-10 left-6 lg:left-10 text-white lg:text-[16px] text-[9px] z-10 flex gap-2">
+              <div className="bg-black/55 rounded-lg px-3 py-1">
+                #유학생 채용 설명회
+              </div>
+              <div className="bg-black/55 rounded-lg px-3 py-1">
+                #다국적 학생 교류 프로그램
+              </div>
+              <div className="bg-black/55 rounded-lg px-3 py-1">
+                #한국어 교육 프로그램
+              </div>
+            </div>
             <Image
               className={'my-auto'}
               src={'/introduce.png'}

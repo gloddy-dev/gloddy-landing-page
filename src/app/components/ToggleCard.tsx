@@ -20,12 +20,14 @@ export function ToggleCard({ title, desc }: ToggleCardProps) {
         duration: 0.1,
         opacity: 1,
         height: 'auto',
+        padding: 12,
       });
     } else {
       gsap.to(container.current, {
         duration: 0.1,
         opacity: 0,
         height: 0,
+        padding: 0,
       });
     }
   }, [open]);
@@ -53,7 +55,7 @@ export function ToggleCard({ title, desc }: ToggleCardProps) {
       <div
         ref={container}
         className={twMerge(
-          'text-sm lg:text-md p-6 h-0 border border-[#E1E1E8] whitespace-pre-wrap bg-[#F8F8F9] rounded-xl rounded-t-0',
+          'text-sm lg:text-md h-0 border border-[#E1E1E8] whitespace-pre-wrap bg-[#F8F8F9] rounded-xl rounded-t-0',
           open ? 'rounded-t-none' : '',
         )}
       >

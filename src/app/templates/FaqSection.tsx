@@ -15,7 +15,7 @@ export function FaqSection() {
           자주 묻는 질문
         </div>
 
-        <div className={'w-full flex flex-col gap-2'}>
+        <div className={'w-full flex flex-col gap-3'}>
           <ToggleCard
             title={'서비스 이용 방법이 어떻게 되나요?'}
             desc={
